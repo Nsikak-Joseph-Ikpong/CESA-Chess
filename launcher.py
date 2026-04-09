@@ -49,7 +49,7 @@ from cesa_voice_chat import CESAVoiceChat, _SYSTEM_PROMPT, _ROBOT_TOOLS
 # ── Config ────────────────────────────────────────────────────────────────────
 PI_IP          = "10.223.93.212"
 STREAM_URL     = f"http://{PI_IP}:5000/video_feed"
-GEMINI_API_KEY = "AIzaSyDBraZf7UgDFg8YxP0GCtht83GvnKthqnQ"
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 GEMINI_MODEL   = "gemini-2.5-flash"
 STOCKFISH_PATH = (
     "C:\\Program Files\\stockfish\\stockfish\\"
