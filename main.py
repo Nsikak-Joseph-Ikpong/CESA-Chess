@@ -763,7 +763,7 @@ def main():
         "C:\\Program Files\\stockfish\\stockfish\\"
         "stockfish-windows-x86-64-avx2.exe"
     )
-    GEMINI_API_KEY = "AIzaSyDBraZf7UgDFg8YxP0GCtht83GvnKthqnQ"
+    GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
     GEMINI_MODEL   = "gemini-2.5-flash"
 
     raw = input("Enter CESA skill level (0-20, default 5): ").strip()
